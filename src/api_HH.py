@@ -186,7 +186,17 @@ class HhVacancies(MixinTown, MixinSort, MixinConvert, AbstractApi):
 
     def _build_response(self) -> List[Dict]:
         """Отправляет запрос"""
-        request_api = requests.request('GET', self.__url, params=self._make_params())
+        params = {
+            'text': self.name,
+            'per_page': self.per_page,
+            'page': self.page,
+            'only_with_salary': True,
+            'area': self.make_id_of_town(self.town),
+            'clusters': True
+        }
+        url = 'https://api.hh.ru/vacancies'
+        request_api = requests.get(url, params)
+
         HhVacancies._response = self._remove_null_instanse(request_api.json()['items'])
 
     def _make_params(self):
@@ -199,4 +209,5 @@ class HhVacancies(MixinTown, MixinSort, MixinConvert, AbstractApi):
             'area': self.make_id_of_town(self.town),
             'clusters': True
         }
+
         return params
