@@ -97,4 +97,37 @@
     "name": "Студия танца Alpha Dance",
     "alternate_url": "https://hh.ru/employer/5281170"
   }
+}{
+  "name": "Певица/певец",
+  "area": {
+    "name": "Ташкент"
+  },
+  "professional_roles": [
+    {
+      "name": "Другое"
+    }
+  ],
+  "salary": {
+    "from_": 1,
+    "to": 10000000,
+    "currency": "UZS"
+  },
+  "experience": {
+    "name": "Нет опыта"
+  },
+  "employment": {
+    "name": "Частичная занятость"
+  },
+  "schedule": {
+    "name": "Гибкий график"
+  },
+  "alternate_url": "https://hh.ru/vacancy/92678582",
+  "snippet": {
+    "requirement": "Трудолюбие, пунктуальность, добропорядочность, тактичность, коммуникабельность, отзывчивость, стрессоустойчивость. Знание узбекского, русского и английского (приветствуется) языков.",
+    "responsibility": "Исполнять песни, как национальные, так и хитовые."
+  },
+  "employer": {
+    "name": "Caravan Group",
+    "alternate_url": "https://hh.ru/employer/1988904"
+  }
 }

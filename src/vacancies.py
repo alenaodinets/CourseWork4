@@ -67,3 +67,13 @@ class Vacancy(AbstractVacancies):
     alternate_url: HttpUrl
     snippet: Snippet
     employer: Employer
+
+    def __le__(self, other):
+        """ Метод сравнения "меньше или равно" вакансий между собой по зарплате. """
+
+        return self.salary <= other.salary
+
+    def __ge__(self, other):
+        """ Метод сравнения "больше или равно" вакансий между собой по зарплате. """
+
+        return self.salary >= other.salary
